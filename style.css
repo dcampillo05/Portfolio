@@ -128,7 +128,7 @@ section.top-site .flex{
     }
 }
 
-/* Skills */
+/* Habilidades */
 
 section.especialidades{
     padding: 40px 4%;
@@ -215,3 +215,126 @@ section.sobre .flex{
     transform: scale(1.05);
     transition: 0.7s;
 }
+
+
+/* Portfólio */
+
+.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008d;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/* Skills */
+
+.skills{
+    padding: 80px 4%;
+    display: flex;
+}
+
+section.skills .flex{
+    margin-top: 60px;
+}
+
+.skills .my-skills{
+    border: 2px solid #000;
+    margin-top: 45px;
+    border-radius: 20px;
+    width: 500px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+
+.skills .my-skills:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+    transition: 0.7s;
+}
+
+.skills .my-skills ul{
+    list-style: none;
+}
+
+.skills .my-skills ul li{
+    margin: 20px 15px;
+}
+
+.skills .barras{
+    background-color: #ccc  ;
+    display: block;
+    height: 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right, #00FF03,#00FF08);
+    position: absolute;
+}
+
+.html{
+    width: 45%;
+}
+
+.python{
+    width: 65%;
+}
+
+.django{
+    width: 50%;
+}
+
+.css{
+    width: 30%;
+}
+
+.sql{
+    width: 40%;
+}
+
+/* Footer */
