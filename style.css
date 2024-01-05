@@ -1,0 +1,217 @@
+/* Configuração geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00FF08;
+}
+
+/* Menu */
+
+header{
+    padding: 40px 4% 4%;
+    
+}
+
+.logo img{
+    height: 100px;
+    width: 80px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+/* Top Site */
+
+section.top-site{
+    padding: 40px 4%;
+}
+
+section.top-site .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.top-site .txt-top-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.top-site .txt-top-site h1 span{
+    color: #00FF08; 
+}
+
+.top-site .txt-top-site p{
+    color: #fff;
+    margin: 40px 0  ;
+}
+
+.top-site .img-top-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    padding-left: 150px;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Skills */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidade-box{
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #000;
+    margin-top: 45px;
+    border-radius: 20px;
+}
+
+.especialidades .especialidade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+    transition: 0.7s;
+}
+
+.especialidades .especialidade-box i{
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidade-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* Sobre mim */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00FF08;
+    display: block;
+}
+
+.sobre .img-sobre img{
+    height: 550px;
+    width: 488px;
+    border-radius: 20px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.btn-social button:hover{
+    box-shadow: 0 0 8px #00FF08;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
