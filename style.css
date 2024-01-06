@@ -64,6 +64,10 @@ h2.titulo span{
     transition: 0.7s;
 }
 
+.efeito-img-top, .efeito-txt-top, .titulo, .effect-hab1, .effect-hab2, .effect-hab3, .effect-img-sobre, .effect-txt-sobre{
+    visibility: hidden;
+}
+
 /* Menu */
 
 header{
@@ -158,6 +162,7 @@ section.top-site .flex{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     padding-left: 150px;
+    filter: drop-shadow(0px 0px 10px #00ff08);
 }
 
 @keyframes flutuar{
@@ -413,6 +418,3 @@ footer .line-footer p i{
     padding: 15px;
     
 }
-
-
-
