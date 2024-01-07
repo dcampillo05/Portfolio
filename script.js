@@ -8,58 +8,80 @@ window.addEventListener("scroll", function(){
 // Efeito rolagem
 window.revelar = ScrollReveal({reset:true})
 
-// TOP Site
+    // TOP Site
 
-revelar.reveal('.efeito-txt-top', {
-    duration: 2000,
-    distance: '90px'
+    revelar.reveal('.efeito-txt-top', {
+        duration: 2000,
+        distance: '90px'
+    })
+
+    revelar.reveal('.efeito-img-top', {
+        duration: 2000,
+        distance: '90px',
+        delay: 500
+    })
+
+    // titulo 
+
+    revelar.reveal('.titulo', {
+        duration: 2000,
+        distance: '90px'
+    })
+
+    // Habilidades
+
+    revelar.reveal('.effect-hab1', {
+        duration: 2000,
+        distance: '90px',
+        delay: 500
+    })
+
+    revelar.reveal('.effect-hab2', {
+        duration: 2000,
+        distance: '90px',
+        delay: 1000
+    })
+
+    revelar.reveal('.effect-hab3', {
+        duration: 2000,
+        distance: '90px',
+        delay: 1500
+    })
+
+    // Sobre
+
+    revelar.reveal('.effect-txt-sobre', {
+        duration: 2000,
+        distance: '90px',
+        origin: 'right',
+        delay: 700
+    })
+
+    revelar.reveal('.effect-img-sobre', {
+        duration: 2000,
+        distance: '90px',
+        delay: 700,
+        origin: 'left' 
+    })
+
+// Menu Mobile
+
+let btnMenu = document.getElementById('btn-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.getElementById('overlay-menu')
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('abrir-menu')
+    overlay.style.display = 'block';
 })
 
-revelar.reveal('.efeito-img-top', {
-    duration: 2000,
-    distance: '90px',
-    delay: 500
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu');
+    overlay.style.display = 'none';
 })
 
-// titulo 
-
-revelar.reveal('.titulo', {
-    duration: 2000,
-    distance: '90px'
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu');
+    overlay.style.display = 'none';
 })
 
-// Habilidades
-
-revelar.reveal('.effect-hab1', {
-    duration: 2000,
-    distance: '90px',
-    delay: 500
-})
-
-revelar.reveal('.effect-hab2', {
-    duration: 2000,
-    distance: '90px',
-    delay: 1000
-})
-
-revelar.reveal('.effect-hab3', {
-    duration: 2000,
-    distance: '90px',
-    delay: 1500
-})
-
-// Sobre
-
-revelar.reveal('.effect-txt-sobre', {
-    duration: 2000,
-    distance: '90px',
-    origin: 'right',
-    delay: 700
-})
-
-revelar.reveal('.effect-img-sobre', {
-    duration: 2000,
-    distance: '90px',
-    delay: 700,
-    origin: 'left' 
-})
