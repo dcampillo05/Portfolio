@@ -150,6 +150,10 @@ header.roll{
     padding: 20px 4%;
 }
 
+.btn-abrir{
+    display: none;
+}
+
 .menu-mobile.abrir-menu{
     width: 70%;
     transition: .2s;
@@ -504,6 +508,10 @@ footer .line-footer p i{
     /* Menu */
     .menu-desktop, .btn-contato{
         display: none;
+    }
+
+    .btn-abrir{
+        display: block;
     }
 
     /* topSite */
