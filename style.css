@@ -435,24 +435,24 @@ section.skills .flex{
     position: absolute;
 }
 
-.html{
-    width: 45%;
+.TypeScript{
+    width: 55%;
 }
 
-.python{
-    width: 65%;
-}
-
-.django{
-    width: 50%;
-}
-
-.css{
-    width: 30%;
-}
-
-.sql{
+.MySQL{
     width: 40%;
+}
+
+.Next{
+    width: 58%;
+}
+
+.React{
+    width: 60%;
+}
+
+.Python{
+    width: 54%;
 }
 
 /* Footer */
